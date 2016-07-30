@@ -1,0 +1,73 @@
+.explain {
+    color: white;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.explain>.info_wrap {
+    background: url("../img/gamePage_info_bg.png") no-repeat;
+    width: 80%;
+    height: 60%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    overflow: hidden;
+}
+.explain>.info_wrap h6 {
+    position: absolute;
+    color: #58bedd;
+    top: 4%;
+    left: 5%;
+}
+.explain>.info_wrap img {
+    width: 10%;
+    position: absolute;
+    right: 4%;
+    top: 2.5%;
+}
+.explain>.info_wrap .text_wrap {
+    width: 85%;
+    height: 80%;
+    padding-right: 20px;
+    position: absolute;
+    overflow: hidden;
+    left: 3%;
+    top: 16%;
+}
+
+.explain>.info_wrap .text_wrap h5 {
+    color: #58bedd;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.explain>.info_wrap .text_wrap p {
+    color: white;
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+    text-align: left;
+}
+
+.iScrollVerticalScrollbar.iScrollLoneScrollbar {
+    width: 1%;
+    position: absolute;
+    left: 98%;
+    height: 96%;
+    top: 2%;
+    background-color: #6c99a7;
+    z-index: 11;
+
+}
+.iScrollIndicator {
+    width: 300%;
+    height: 50px;
+    background-color: #c5c5c5;
+    position: absolute;
+    margin-left: -100%;
+    border-radius: 10px;
+    z-index: 12;
+}

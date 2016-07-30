@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            (function(){
+                var resizeEvent =  'orientationchange' in window ? 'orientationchange' :'resize';
+                var rescale = function(){
+                   document.documentElement.style.fontSize = document.documentElement.clientWidth/640*40 + 'px';
+                };
+                // rescale();
+                window.addEventListener(resizeEvent, rescale, false);
+                document.addEventListener('DOMContentLoaded', rescale, false);
+            })();
+        </script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title></title>
+
+        <!-- 引入css文件 -->
+        <link rel="stylesheet" href="css/reset.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/explain.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/loadingPage.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/showTextPage.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/gamePage.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="css/zoariumPage.css" media="screen" title="no title" charset="utf-8">
+
+        <!-- 引入js文件 -->
+        <script src="lib/jquery-2.1.3.min.js" charset="utf-8"></script>
+        <script src="lib/iscroll.js" charset="utf-8"></script>
+        <script src="js/loadingPage.js" charset="utf-8"></script>
+        <script src="js/showTextPage.js" charset="utf-8"></script>
+        <!-- <script src="js/gamePage.js" charset="utf-8"></script> -->
+        <!-- <script src="js/zoariumPage.js" charset="utf-8"></script> -->
+
+
+    </head>
+    <body>
+
+        <div class="container">
+
+
+
+
+<!-- ------------ -->
+
+
+<!-- 'gamePage_bg.png',			showTextPage_5_1.png
+'gamePage_game_wrap.png',		showTextPage_5_2.png
+'gamePage_info_bg.png',		showTextPage_5_3.png
+gamePage_info_bg.png.zip	showTextPage_bg.png
+gamePage_info_delete.png	showTextPage_debris_0.png
+gamePage_ming.png		showTextPage_debris_1.png
+gamePage_niblick.png		showTextPage_debris_2.png
+gamePage_pass_1.png		showTextPage_debris_3.png
+gamePage_popups1.png		showTextPage_debris_4.png
+gamePage_popups2.png		showTextPage_debris_5.png
+gamePage_popups3.png		showTextPage_debris_6.png
+gamePage_popups4.png		showTextPage_debris_7.png
+gamePage_popups5.png		showTextPage_debris_8.png
+gamePage_popups6.png		showTextPage_star_1.png
+gamePage_popups7.png		showTextPage_star_2.png
+gamePage_popups8.png		showTextPage_star_3.png
+gamePage_popups_fail_bg.png	showTextPage_star_4.png
+gamePage_xuzheng.png		showTextPage_star_5.png
+loadingPage_bg.png		showTextPage_star_6.png
+loadingPage_text.png		showTextPage_star_7.png
+showTextPage_1.png		showTextPage_star_8.png
+showTextPage_2.png		showTextPage_upArrow.png
+showTextPage_3.png		showTextPage_vivo.png
+showTextPage_4.png		showTextPage_vivo_1.png
+showTextPage_5.png		zoariumPage_bg.png
+showTextPage_5_0.png		zoariumPage_lottery_phone.png
+lanou3g:~ zhaoce$ -->
+
+
+
+
+
+
+
+
+<!-- ------------------- -->
+            <audio id="audio" src="audio/text_bg.mp3" autoplay loop></audio>
+
+
+
+            <!-- 加载页 -->
+            <section class="page loadingPage" hidden>
+                <img src="img/loadingPage_text.png" alt="" />
+            </section>
+
+            <!-- 文本页 -->
+            <section class="page showTextPage" hidden>
+                <!-- //星球 -->
+                <img src="img/showTextPage_1.png" alt="" />
+                <img src="img/showTextPage_2.png" alt="" />
+                <img src="img/showTextPage_3.png" alt="" />
+                <img src="img/showTextPage_4.png" alt="" />
+
+                <!-- 超人 -->
+                <figure class="superman">
+                    <img src="img/showTextPage_5_0.png" alt="" />
+                </figure>
+
+                <!-- 手机 -->
+                <figure class="phone" hidden>
+                    <img src="img/showTextPage_vivo.png" alt="" />
+                    <div class="debris" hidden>
+                        <div>
+                            <img class="phoneDebris" src="img/showTextPage_debris_8.png" alt="">
+                            <img class="peopleDebris" src="img/showTextPage_debris_0.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="phoneDebris" src="img/showTextPage_debris_7.png" alt="">
+                            <img class="peopleDebris" src="img/showTextPage_debris_0.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="phoneDebris" src="img/showTextPage_debris_6.png" alt="">
+                            <img class="peopleDebris" src="img/showTextPage_debris_0.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="phoneDebris" src="img/showTextPage_debris_5.png" alt="">
+                            <img class="peopleDebris" src="img/showTextPage_debris_0.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="phoneDebris" src="img/showTextPage_debris_4.png" alt="">
+                            <img class="peopleDebris" src="img/showTextPage_debris_0.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="phoneDebris" src="img/showTextPage_debris_3.png" alt="">
+                            <img class="peopleDebris" src="img/showTextPage_debris_0.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="phoneDebris" src="img/showTextPage_debris_2.png" alt="">
+                            <img class="peopleDebris" src="img/showTextPage_debris_0.png" alt="" />
+                        </div>
+                        <div>
+                            <img class="phoneDebris" src="img/showTextPage_debris_1.png" alt="">
+                            <img class="peopleDebris" src="img/showTextPage_debris_0.png" alt="" />
+                        </div>
+                    </div>
+                    <ul class="stars" hidden>
+                        <img src="img/showTextPage_star_1.png" alt="" />
+                        <img src="img/showTextPage_star_2.png" alt="" />
+                        <img src="img/showTextPage_star_3.png" alt="" />
+                        <img src="img/showTextPage_star_4.png" alt="" />
+                        <img src="img/showTextPage_star_5.png" alt="" />
+                        <img src="img/showTextPage_star_6.png" alt="" />
+                        <img src="img/showTextPage_star_7.png" alt="" />
+                        <img src="img/showTextPage_star_8.png" alt="" />
+                    </ul>
+                </figure>
+
+                <!-- 段落 -->
+                <content>
+                    <p hidden>公元9025年</p>
+                    <p hidden>外星人为了争夺</p>
+                    <p hidden>封印在vivo手机中的神秘能量</p>
+                    <p hidden>发起宇宙战乱</p>
+                    <p hidden>超人徐峥为了保卫神秘能量</p>
+                    <p hidden>带着手机来到浩瀚宇宙中</p>
+                    <p hidden>分身成为8个自己</p>
+                    <p hidden>分别保卫8快手机碎片</p>
+                    <p hidden>消失在太阳系的八大行星中</p>
+                    <p hidden>据说找齐徐峥的8个分身</p>
+                    <p hidden>就能启动神秘能量保护地球</p>
+                    <p hidden>...</p>
+                </content>
+
+                <!-- 寻找徐峥btn -->
+                <a href="jsvascript:void(0)" hidden>
+                    <p>找齐徐峥 启动能量</p>
+                    <img src="img/showTextPage_upArrow.png" alt="" />
+                </a>
+            </section>
+
+            <!-- 游戏页 -->
+            <section class="page gamePage" hidden>
+                <p class="passP"></p>
+                <div class="game_wrap">
+                    <span class="count">30：00</span>
+                    <div class="person_wrap">
+
+                    </div>
+                </div>
+
+                <!-- 弹窗界面 -->
+                <div class="popups" hidden>
+                    <!-- 游戏弹窗 -->
+                </div>
+
+                <!-- 失败弹窗 -->
+                <div class="popups_fail" hidden>
+                    <button class="recur_btn">再试一次</button>
+                    <button class="explain_btn">游戏说明</button>
+                </div>
+
+
+            </section>
+
+            <!-- 合体页 -->
+            <section class="page zoariumPage">
+                <div class="text">
+                    <p hidden>旺德福</p>
+                    <p hidden>你已集齐徐峥分身</p>
+                    <p hidden>vivo X5pro碎片开始合体</p>
+                    <p hidden>合体中</p>
+                    <p hidden>...</p>
+                </div>
+                <div class="phone_debris">
+                    <div hidden>
+                        <img src="img/showTextPage_debris_8.png" alt="">
+                        <span>Funtouch OS系统</span>
+                    </div>
+                    <div hidden>
+                        <img src="img/showTextPage_debris_7.png" alt="">
+                        <span>双2.5D弧面玻璃</span>
+                    </div>
+                    <div hidden>
+                        <img src="img/showTextPage_debris_6.png" alt="">
+                        <span>知性美颜系统</span>
+                    </div>
+                    <div hidden>
+                        <img src="img/showTextPage_debris_5.png" alt="">
+                        <span>眼球识别加密系统</span>
+                    </div>
+                    <div hidden>
+                        <img src="img/showTextPage_debris_4.png" alt="">
+                        <span>1300万像素镜头</span>
+                    </div>
+                    <div hidden>
+                        <img src="img/showTextPage_debris_3.png" alt="">
+                        <span>Hi-Fi音质耳放</span>
+                    </div>
+                    <div hidden>
+                        <img src="img/showTextPage_debris_2.png" alt="">
+                        <span>八核1.7GHz处理器</span>
+                    </div>
+                    <div hidden>
+                        <img src="img/showTextPage_debris_1.png" alt="">
+                        <span>PDAF快速相位对焦系统</span>
+                    </div>
+
+                </div>
+                <div class="lottery_phone" hidden>
+                    <img src="img/zoariumPage_lottery_phone.png" alt="" />
+                    <div class="phone_text">
+                        <p>成功合体</p>
+                        <p>距离启动神秘力量</p>
+                        <p>还差最后一步</p>
+                        <p>请点击......</p>
+                    </div>
+                    <div class="lottery_phone_btns">
+                        <button class="lottery_btn">开始抽奖</button>
+                        <button class="explain_btn">游戏说明</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section class="page" hidden>
+
+            </section> -->
+
+            <!-- <section class="page" hidden>
+
+            </section> -->
+
+            <!-- 活动说明 -->
+            <div class="explain" hidden>
+                <div class="info_wrap">
+                    <h6>找徐峥 送vivo</h6>
+                    <img src="img/gamePage_info_delete.png" alt="" />
+                    <div class="text_wrap" id="wrapper">
+                        <div>
+                            <h5>游戏规则：</h5>
+                            <p>
+                                1.玩家要在规定时间内，依次从2*2至7*7的方格中找徐峥。点对徐峥，即可过关。<br/>
+                                2.每找到一个徐峥，得到一个vivo手机“碎片”。集齐8块“碎片”，即获得一次抽奖机会。<br/>
+                                3.中奖玩家请正确填写信息。信息填写错误或未填写的玩家将被取消中奖资格。<br/>
+                                4.每个ID只有一次中奖机会。<br/>
+                                5.恶意刷奖的玩家一经发现将取消抽奖资格。<br/>
+                            </p>
+                            <h5>活动时间：</h5>
+                            <p>
+                                2015年9月28至10月2日
+                            </p>
+                            <h5>游戏奖励：</h5>
+                            <p>
+                                一等奖：vivo X5Pro智能手机 2台<br/>
+                                二等奖：vivo充电宝 10个<br/>
+                                三等奖：vivo耳机 20个<br/>
+                                四等奖：《港囧》电影票20套（每套2张）<br/>
+                                五等奖：《港囧》主创签名剧照 50张<br/>
+                                六等奖：vivo官方旗舰店100元代金券 20张<br/>
+                                注：电影票为格瓦拉兑换券，中奖玩家请自行兑换<br/>
+                                <br/>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+    </body>
+
+</html>
